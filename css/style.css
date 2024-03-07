@@ -1,0 +1,153 @@
+
+.titulo-principal{
+    color: rgb(248, 213, 11);
+    background-color: rgb(89, 99, 99);
+    font-size: 30px;
+    text-align: center;
+}
+/*header{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 20px;
+} */
+header{
+    display: flex;
+    background-color: #1e1e1e;
+    flex-direction: column;
+    align-items: center;
+}
+header img{
+    width: 100px;
+    
+}
+header nav ul {
+    list-style:none ;
+}
+header nav ul li a{
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.card{
+    width: 350px;
+    height: 380px;
+    border-radius:20px 0px;
+    overflow: hidden;
+    box-shadow: 10px 12px 28px 0px rgba(0,0,0,0.75);
+    position: relative;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 180px;
+    padding: 10px;
+}
+.descuento{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1e1e1e;
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 0 0 0 5px; 
+}
+@media screen and (min-width: 768px){
+    header{
+        flex-direction: row;
+        background-color: #1e1e1e;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+    header nav ul{
+        display: flex;
+        column-gap: 15px;
+        padding: 15px;
+    }
+}
+.venta{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 300px);
+    margin: 1rem 3rem 3rem 3rem;
+    gap: 1rem;
+
+}
+.venta img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.venta{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: 
+    "baño baño"
+    "cocina dormitorio"
+    "living living";
+}
+.baño{
+    grid-area: baño;
+}
+.cocina{
+    grid-area: cocina;
+}
+.dormitorio{
+    grid-area: dormitorio;
+}
+.living{
+    grid-area: living;
+}
+@media screen and (min-width: 1024px){
+    .Alquiler{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3, 30vh);
+        grid-template-areas: 
+        "baño dormitorio dormitorio"
+        "baño living living"
+        "cocina cocina cocina";
+    }
+}
+.Alquiler{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 300px);
+    margin: 1rem 3rem 3rem 3rem;
+    gap: 1rem;
+
+}
+.Alquiler img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Alquiler{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: 
+    "baño baño"
+    "cocina dormitorio"
+    "living living";
+    }

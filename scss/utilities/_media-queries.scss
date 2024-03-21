@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px){
+    header{
+        flex-direction: row;
+        background-color: #1e1e1e;
+        justify-content:center;
+        align-items: center;
+        padding: 15px;
+    }
+    header{
+        nav{
+            ul{
+                display: flex;
+                column-gap: 15px;
+                padding: 15px;
+            }
+        }
+    }  
+}
+@media screen and (min-width: 1024px){
+    .alquiler{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3, 30vh);
+        grid-template-areas: 
+        "bano dormitorio dormitorio"
+        "bano living living"
+        "cocina cocina cocina";
+    } 
+}

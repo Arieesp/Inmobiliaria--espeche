@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  display: flex;
+  background-color: #1e1e1e;
+  flex-direction: column;
+  align-items: center; 
+}
+header a img {
+  width: 100px;
+}
+header nav ul {
+  list-style: none;
+}
+header nav li a {
+  text-decoration: none;
+  color: rgb(187, 111, 12);
+  font-size: 20px;
+}
+
+.main-index .banner {
+  height: 450px;
+  background-image: url(./../img/living-venta.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+.main-index .card {
+  width: 350px;
+  height: 380px;
+  border-radius: 20px 0px;
+  overflow: hidden;
+  box-shadow: 10px 12px 28px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+}
+.main-index .card img {
+  width: 100%;
+  height: 200px;
+}
+.main-index .card-texto {
+  text-align: center;
+  height: 180px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-index .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.alquiler {
+  display: grid;
+  margin: 1rem 3rem 3rem 3rem;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  grid-template-areas: "bano bano" "cocina dormitorio" "living living";
+}
+.alquiler img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.venta {
+  display: grid;
+  margin: 1rem 3rem 3rem 3rem;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  grid-template-areas: "bano bano" "cocina dormitorio" "living living";
+}
+.venta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    background-color: #1e1e1e;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  header nav ul {
+    display: flex;
+    column-gap: 15px;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .alquiler {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 30vh);
+    grid-template-areas: "bano dormitorio dormitorio" "bano living living" "cocina cocina cocina";
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
